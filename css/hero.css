@@ -1,25 +1,46 @@
 .hero {
-  padding: 188px 0;
-  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0;
+  padding: 72px 0;
   margin: 0 auto;
   background-color: #2e2f42;
-  background-image:  linear-gradient( rgba(46, 47, 66, 0.7) , rgba(46, 47, 66, 0.7) 100%), url("../images/hero/hero-bg.jpg");
+  background-image:
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) 100%),
+    url('../images/hero/hero-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1157.97) {
+  .hero {
+    padding: 112px 0;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .hero {
+    padding: 188px 0;
+    max-width: 1440px;
+  }
+}
 
 .hero-title {
   max-width: 496px;
   margin: 0 auto 48px;
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
-  text-align:center;
+  text-align: center;
   color: #fff;
 }
+/* 1158 font-size: 56px;
+line-height: 1.07; 
+*/
 .order-btn {
   display: flex;
   margin: 0 auto;
@@ -37,7 +58,6 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color;
 }
-
 
 .order-btn:hover,
 .order-btn:focus {

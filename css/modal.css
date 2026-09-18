@@ -31,14 +31,14 @@
   transition-property: transform, opacity;
 }
 .backdrop.is-open {
-  opacity: 1;
+  opacity: 0;
   visibility: visible;
   pointer-events: initial;
   transition: 0ms;
 }
 .backdrop.is-open .modal {
   transform: translateX(-50%) translateY(-50%);
-  opacity: 1;
+  opacity: 0;
   transition-delay: 250ms;
 }
 /*Modal form*/

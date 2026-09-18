@@ -8,12 +8,37 @@ body {
   background: #fff;
 }
 .container {
-  max-width: 1158px;
-  padding: 0 15px;
+  min-width: 320px;
+  max-width: 320px;
   margin: 0 auto;
+
+  /*max-width: 1158px;
+  padding: 0 15px;
+  
+  outline-offset: -2px;*/
+  outline: 2px solid red;
   outline-offset: -2px;
 }
-h1, h2, h3, h4, h5, h6, p {
+@media screen and (min-width:768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 16px;
+  }
+}
+@media screen and (min-width:1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
@@ -35,26 +60,29 @@ address {
 img {
   display: block;
 }
+/*Helper class*/
+.hide {
+  display: none !important;
+}
 /*Base styles*/
-.sr-only{
- position: absolute; 
- white-space: nowrap;
- width: 1px;
- height: 1px;
- overflow: hidden;
- border: 0;
- padding: 0;
- clip: rect(0 0 0 0);
- clip-path: inset(100%);
- margin: -1px;
+.sr-only {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  margin: -1px;
 }
 .section {
-  
 }
 .section-title {
   max-width: 496px;
   margin: 0 auto 104px;
- 
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.12;
@@ -65,7 +93,7 @@ img {
 .logo {
   display: inline-flex;
   align-items: center;
-  
+
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   line-height: 1.33;
