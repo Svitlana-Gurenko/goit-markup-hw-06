@@ -10,12 +10,10 @@ body {
 .container {
   min-width: 320px;
   max-width: 320px;
+  padding: 0 16px;
   margin: 0 auto;
 
-  /*max-width: 1158px;
-  padding: 0 15px;
-  
-  outline-offset: -2px;*/
+  outline-offset: -2px;
   outline: 2px solid red;
   outline-offset: -2px;
 }
