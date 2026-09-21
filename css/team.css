@@ -1,9 +1,43 @@
 .team {
-  padding: 120px 0;
   background: #f4f4fd;
 }
+
 .team-title {
-  margin-bottom: 72px;
+  max-width: 162px;
+  margin: 0 auto 72px;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+@media only screen and (min-width: 768px) {
+  .team-list {
+   flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+ 
+  }
+}
+
+.team-item {
+ 
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background-color: #fff;
+}
+@media  (min-width: 768px) {
+  .team-item {
+    width: calc((100% - 24px ) / 2);
+    
+  }
+}
+@media  (min-width: 1158px) {
+  .team-item {
+    width: calc((100% - 24px*3 ) / 4);
+    
+  }
 }
 .card-author {
   display: flex;
@@ -12,19 +46,6 @@
   flex-direction: column;
   gap: 8px;
   padding: 32px 16px;
-}
-
-.team-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
-.team-item {
-  width: calc((100% - 24px * 3) / 4);
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  background-color: #fff;
 }
 .social{
   
@@ -70,6 +91,7 @@ color: #f4f4fd;
   text-align: center;
   color: #2e2f42;
 }
+
 .team-desc {
   font-weight: 400;
   font-size: 16px;
