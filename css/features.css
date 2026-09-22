@@ -78,7 +78,11 @@
     width: calc((100% - 24px) / 2);
   }
 }
-
+@media (min-width: 1158px) {
+  .features-item {
+    width: calc((100% - 24px *3) / 4);
+  }
+}
 @media (min-width: 1158px) {
   .features-icon {
     display: flex;
