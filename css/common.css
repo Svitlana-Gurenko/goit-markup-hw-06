@@ -12,16 +12,14 @@ body {
   max-width: 320px;
   padding: 0 16px;
   margin: 0 auto;
-
-
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     padding: 0 16px;
   }
 }
-@media screen and (min-width:1158px) {
+@media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
     padding: 0 15px;
@@ -55,6 +53,8 @@ address {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /*Base styles*/
@@ -88,8 +88,6 @@ img {
   text-align: center;
   color: #2e2f42;
 }
-
-
 
 .logo {
   display: inline-flex;

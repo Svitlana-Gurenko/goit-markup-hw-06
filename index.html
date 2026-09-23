@@ -70,7 +70,7 @@
     </header>
     <main>
       <!--Hero section -->
-      <section class="hero " id="hero">
+      <section class="hero" id="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="order-btn" type="button">Order Service</button>
@@ -78,7 +78,7 @@
       </section>
 
       <!-- Features section-->
-      <section class="features " id="features">
+      <section class="features" id="features">
         <div class="container">
           <h2 class="sr-only">Our Features</h2>
           <ul class="features-list">
@@ -135,13 +135,14 @@
       </section>
 
       <!--Team section-->
-      <section class="team section " id="team">
+      <section class="team section" id="team">
         <div class="container">
           <h2 class="team-title section-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
               <img
                 class="team-ill"
+                srcset="./images/team-1.jpg 1x, ./images/team-1@2x.jpg 2x"
                 src="./images/team-1.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -203,6 +204,7 @@
             <li class="team-item">
               <img
                 class="team-ill"
+                srcset="./images/team-2.jpg 1x, ./images/team-2@2x.jpg 2x"
                 src="./images/team-2.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -264,6 +266,7 @@
             <li class="team-item">
               <img
                 class="team-ill"
+                srcset="./images/team-3.jpg 1x, ./images/team-3@2x.jpg 2x"
                 src="./images/team-3.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -325,6 +328,7 @@
             <li class="team-item">
               <img
                 class="team-ill"
+                srcset="./images/team-4.jpg 1x, ./images/team-4@2x.jpg 2x"
                 src="./images/team-4.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -387,7 +391,7 @@
       </section>
 
       <!--Portfolio section-->
-      <section class="portfolio section " id="portfolio">
+      <section class="portfolio section" id="portfolio">
         <div class="container">
           <h2 class="portfolio-title section">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -395,6 +399,10 @@
               <div class="portfolio-thumb">
                 <img
                   class="portfolio-pic"
+                  srcset="
+                    ./images/portfolio-1.jpg    1x,
+                    ./images/portfolio-1@2x.jpg 2x
+                  "
                   src="./images/portfolio-1.jpg"
                   alt="Banking App"
                   width="360"
@@ -415,6 +423,10 @@
               <div class="portfolio-thumb">
                 <img
                   class="portfolio-pic"
+                  srcset="
+                    ./images/portfolio-2.jpg    1x,
+                    ./images/portfolio-2@2x.jpg 2x
+                  "
                   src="./images/portfolio-2.jpg"
                   alt="Cashless Payment"
                   width="360"
@@ -435,6 +447,10 @@
               <div class="portfolio-thumb">
                 <img
                   class="portfolio-pic"
+                  srcset="
+                    ./images/portfolio-3.jpg    1x,
+                    ./images/portfolio-3@2x.jpg 2x
+                  "
                   src="./images/portfolio-3.jpg"
                   alt="Meditation App"
                   width="360"
@@ -455,6 +471,10 @@
               <div class="portfolio-thumb">
                 <img
                   class="portfolio-pic"
+                  srcset="
+                    ./images/portfolio-4.jpg    1x,
+                    ./images/portfolio-4@2x.jpg 2x
+                  "
                   src="./images/portfolio-4.jpg"
                   alt="Taxi Service"
                   width="360"
@@ -475,6 +495,10 @@
               <div class="portfolio-thumb">
                 <img
                   class="portfolio-pic"
+                  srcset="
+                    ./images/portfolio-5.jpg    1x,
+                    ./images/portfolio-5@2x.jpg 2x
+                  "
                   src="./images/portfolio-5.jpg"
                   alt="Screen Illustrations"
                   width="360"
@@ -495,6 +519,10 @@
               <div class="portfolio-thumb">
                 <img
                   class="portfolio-pic"
+                  srcset="
+                    ./images/portfolio-6.jpg    1x,
+                    ./images/portfolio-6@2x.jpg 2x
+                  "
                   src="./images/portfolio-6.jpg"
                   alt="Online Courses"
                   width="360"
@@ -517,7 +545,7 @@
     </main>
 
     <!-- section footer-->
-    <footer class="footer " id="footer hide">
+    <footer class="footer" id="footer">
       <div class="container footer-container">
         <div class="footer-left">
           <a class="contacts-link" href="./index.html"
@@ -598,7 +626,7 @@
         </form>
       </div>
     </footer>
-    <Mobile menu>
+    <!--Mobile menu-->
     <div class="mobile-menu">
       <div class="mobile-menu-container">
         <button class="mobile-menu-btn">
@@ -607,85 +635,88 @@
           </svg>
         </button>
         <ul class="mobile-menu-list">
-          <li class="mobile-menu-item"><a  class="mobile-menu-link activ" href="#">Features</a></li>
-          <li class="mobile-menu-item"><a class="mobile-menu-link" href="#" >Team</a></li>
-          <li class="mobile-menu-item"><a  class="mobile-menu-link" href="#">Portfolio</a></li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link activ" href="#">Features</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="#">Team</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="#">Portfolio</a>
+          </li>
         </ul>
         <div class="bottom">
-          
           <address class="mobile-menu-address">
             <ul>
               <li>
                 <a class="mobile-menu-address-phone" href="tel:+110001111111"
                   >+11 (000) 111-11-11</a
-                
                 >
               </li>
               <li>
-                <a class="mobile-menu-address-email" href="mailto:info@devstudio.com"
+                <a
+                  class="mobile-menu-address-email"
+                  href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
-                
                 >
               </li>
             </ul>
           </address>
           <ul class="team-social">
-                    <li class="social">
-                      <a
-                        class="social-link"
-                        href=" https://instagram.com"
-                        target="_blank"
-                      >
-                        <svg class="social-icon-svg" width="16" height="16">
-                          <use href="./images/icons.svg#instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social">
-                      <a
-                        class="social-link"
-                        href="https://twitter.com"
-                        target="_blank"
-                      >
-                        <svg class="social-icon-svg" width="16" height="16">
-                          <use href="./images/icons.svg#twitter"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social">
-                      <a
-                        class="social-link"
-                        href="https://facebook.com"
-                        target="_blank"
-                      >
-                        <svg class="social-icon-svg" width="16" height="16">
-                          <use href="./images/icons.svg#facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social">
-                      <a
-                        class="social-link"
-                         href="https://linkedin.com"
-                        target="_blank"
-                      >
-                        <svg class="social-icon-svg" width="16" height="16">
-                          <use href="./images/icons.svg#linkedin"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
+            <li class="social">
+              <a
+                class="social-link"
+                href=" https://instagram.com"
+                target="_blank"
+              >
+                <svg class="social-icon-svg" width="16" height="16">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social">
+              <a class="social-link" href="https://twitter.com" target="_blank">
+                <svg class="social-icon-svg" width="16" height="16">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social">
+              <a
+                class="social-link"
+                href="https://facebook.com"
+                target="_blank"
+              >
+                <svg class="social-icon-svg" width="16" height="16">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social">
+              <a
+                class="social-link"
+                href="https://linkedin.com"
+                target="_blank"
+              >
+                <svg class="social-icon-svg" width="16" height="16">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
-
-        
       </div>
     </div>
-    <Modal window>
-  
-      <div class="modal-container" id="modal">
-        <div class="backdrop ">
-          <div class="modal" >
-          <button class="modal-btn" type="button" aria-label="Close modal button">
+    <!--Modal window-->
+
+    <div class="modal-container" id="modal">
+      <div class="backdrop">
+        <div class="modal">
+          <button
+            class="modal-btn"
+            type="button"
+            aria-label="Close modal button"
+          >
             <svg class="modal-btn-icon" width="8" height="8">
               <use href="./images/icons.svg#close"></use>
             </svg>
@@ -774,7 +805,7 @@
             <button class="btn btn-filled" type="submit">Send</button>
           </form>
         </div>
-            </div>
       </div>
+    </div>
   </body>
 </html>
