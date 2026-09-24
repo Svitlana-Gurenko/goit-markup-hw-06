@@ -24,7 +24,7 @@
 
    }
  }
-@media  (min-width: 768px) and (max-width: 1157.97) {
+@media  (min-width: 768px) and (max-width: 1157.97px) {
   .hero {
     padding: 112px 0;
     
@@ -43,8 +43,8 @@
 }
 
 .hero-title {
-  max-width: 496px;
-  margin: 0 auto 48px;
+  max-width: 216px;
+  margin: 0 auto 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -54,11 +54,17 @@
 }
 @media only screen and (min-width: 768px) {
   .hero-title {
+    max-width: 496px;
+    margin: 0 auto 36px;
     font-size: 56px;
     line-height: 1.07;
   }
 }
-
+@media only screen and (min-width: 1158px) {
+  .hero-title {
+   margin: 0 auto 48px;
+  }
+}
 .order-btn {
   display: flex;
   margin: 0 auto;

@@ -1,12 +1,8 @@
 .portfolio {
-  padding: 96px 0;
+ 
   background-color: #fff;
 }
-@media only screen and (min-width: 1158px) {
-  .portfolio {
-    padding: 120px 0;
-  }
-}
+
 
 .portfolio-title {
   margin-bottom: 72px;
@@ -20,8 +16,8 @@
 .portfolio-list {
   display: flex;
   flex-direction: column;
-
-  column-gap: 24px;
+  row-gap: 48px;
+  
  
 }
 @media only screen and (min-width: 768px) {
