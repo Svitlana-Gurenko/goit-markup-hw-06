@@ -7,6 +7,7 @@
 @media only screen and (min-width: 768px) {
   .features-list {
     column-gap: 24px;
+    row-gap: 72px;
    
   }
 }
@@ -24,8 +25,8 @@
 }
 
 
-@media only screen and (max-width: 1157.97px) {
-  .features-item:nth-child(-n + 2) {
+@media only screen and (max-width: 767.97px) {
+  .features-item:not(:last-child) {
     margin-bottom: 72px;
   
   }

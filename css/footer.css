@@ -16,8 +16,9 @@
 }
 @media only screen and (min-width: 1158px) {
   .footer-container {
-    justify-content: space-between;
+    justify-content: flex-start;
     column-gap: 120px;
+    padding: 0;
   }
 }
 .footer {
@@ -26,7 +27,7 @@
 }
 @media only screen and (min-width: 1158px) {
   .footer {
-   padding: 100px;
+   padding: 100px 0;
   }
 }
 
@@ -173,7 +174,8 @@
 @media only screen and (min-width: 768px) {
   .subscribe-footer {
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    gap: 24px;
 
   }
 }

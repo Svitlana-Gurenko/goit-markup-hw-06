@@ -27,6 +27,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     row-gap: 72px;
+    column-gap: 24px;
 
 
   }
@@ -34,6 +35,7 @@
 @media only screen and (min-width: 1158px) {
   .portfolio-list {
     row-gap: 48px;
+  
   }
 }
 
